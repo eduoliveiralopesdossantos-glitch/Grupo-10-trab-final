@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | Elite Sports Wear</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+  <div class="page-shell auth-page">
+    <header class="site-header auth-header">
+      <div class="brand">
+        <div class="brand-mark">
+          <img class="brand-logo" src="assets/images/logo.png" alt="ESW logo">
+        </div>
+        <div>
+          <p class="eyebrow">Elite Sports Wear</p>
+          <h1 class="brand-title small-title">Acesso premium</h1>
+        </div>
+      </div>
+      <a class="nav-link" href="index.html">Voltar à loja</a>
+    </header>
+
+    <main class="auth-panel">
+      <div class="section-header">
+        <p class="eyebrow">Login e Cadastro</p>
+        <h3>Entre ou crie sua conta para acessar ofertas exclusivas.</h3>
+      </div>
+
+      <div class="auth-card">
+        <div class="auth-tabs" role="tablist" aria-label="Login e Registro">
+          <button class="tab-button active" data-target="login-form" type="button">Login</button>
+          <button class="tab-button" data-target="register-form" type="button">Criar Conta</button>
+        </div>
+
+        <div class="form-frame">
+          <form id="login-form" class="auth-form active" novalidate>
+            <h4>Login</h4>
+            <label>
+              <span>Email</span>
+              <input id="login-email" type="email" placeholder="seu@email.com" required>
+            </label>
+            <label>
+              <span>Senha</span>
+              <input id="login-password" type="password" placeholder="Mínimo 8 caracteres" required minlength="8">
+            </label>
+            <p class="form-note">Digite seu email e senha para acessar a conta.</p>
+            <button class="form-submit" type="submit">Entrar</button>
+          </form>
+
+          <form id="register-form" class="auth-form" novalidate>
+            <h4>Criar Conta</h4>
+            <label>
+              <span>Nome completo</span>
+              <input id="register-name" type="text" placeholder="Seu nome" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input id="register-email" type="email" placeholder="seu@email.com" required>
+            </label>
+            <label>
+              <span>Senha</span>
+              <input id="register-password" type="password" placeholder="Mínimo 8 caracteres" required minlength="8">
+            </label>
+            <p class="form-note">Sua senha deve ter ao menos 8 caracteres.</p>
+            <button class="form-submit" type="submit">Criar Conta</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

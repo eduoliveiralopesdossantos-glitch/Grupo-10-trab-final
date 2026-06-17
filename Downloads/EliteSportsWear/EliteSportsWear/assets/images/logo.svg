@@ -1,0 +1,25 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020202" />
+      <stop offset="1" stop-color="#111111" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8cf30" />
+      <stop offset="1" stop-color="#d4a929" />
+    </linearGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8f9fb" />
+      <stop offset="1" stop-color="#e5e7eb" />
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f7b3f" />
+      <stop offset="1" stop-color="#17a35c" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="40" fill="url(#bg)" />
+  <path d="M58 116 h88 v22 h-58 v26 h58 v22 h-88 z" fill="url(#white)" />
+  <path d="M154 116 h76 l16 28 h-40 l-8 -16 h-40 v16 c0 16 14 30 30 30 h16 l14 26 h-42 c-28 0 -50 -22 -50 -50 v-16 c0 -18 14 -34 32 -38z" fill="url(#gold)" />
+  <path d="M162 78 l22 -34 l22 34 l18 0 l-30 40 l-30 -40 z" fill="url(#gold)" />
+  <rect x="204" y="76" width="48" height="16" rx="5" fill="url(#green)" />
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#f5f7fb"/>
+  <rect x="48" y="48" width="1104" height="504" rx="28" fill="#fff" stroke="#e6eef3"/>
+  <text x="50%" y="50%" font-family="Inter, Arial, sans-serif" font-size="36" fill="#55606d" text-anchor="middle" dominant-baseline="middle">Imagem Hero Placeholder — Elite Sports Wear</text>
+</svg>

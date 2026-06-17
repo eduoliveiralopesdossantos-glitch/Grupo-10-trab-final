@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Sports Wear | Camisetas Premium</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-mark">
+          <img class="brand-logo" src="assets/images/logo.png" alt="Elite Sports Wear logo">
+        </div>
+        <div>
+          <p class="eyebrow">Elite Sports Wear</p>
+          <h1 class="brand-title">Camisetas premium com alma brasileira.</h1>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link" href="#colecao">Coleção</a>
+        <a class="nav-link" href="#vantagens">Vantagens</a>
+        <a class="nav-link" href="login.html">Entrar / Criar Conta</a>
+      </nav>
+      <button class="cart-button" id="cart-button" type="button">
+        Carrinho <span class="cart-count hidden" id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main class="main-content">
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <span class="hero-badge">Vista sua paixão</span>
+          <h2>Honre sua <strong>nação</strong>.</h2>
+          <p class="hero-text">Camisas de alta performance para quem vive o futebol.</p>
+          <div class="hero-actions">
+            <a class="hero-link" href="#colecao">Confira a coleção</a>
+            <a class="secondary-link" href="login.html">Entrar</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="hero-image" src="assets/images/logo.png" alt="Elite Sports Wear logo">
+          <div class="hero-card">
+            <div class="hero-stat">
+              <span>120+</span>
+              <p>Modelos exclusivos</p>
+            </div>
+            <div class="hero-stat">
+              <span>100%</span>
+              <p>Design nacional</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog" id="colecao">
+        <div class="section-header">
+          <p class="eyebrow">Coleção</p>
+          <h3>Peças premium com toque refinado e energia brasileira.</h3>
+        </div>
+        <div class="catalog-grid" id="product-grid"></div>
+      </section>
+
+      <section class="about" id="vantagens">
+        <div class="about-card">
+          <p class="eyebrow">Por que escolher</p>
+          <h3>Experiência premium, design responsável e foco em qualidade.</h3>
+          <p>Cada camiseta é produzida para oferecer caimento excelente, materiais cuidadosamente selecionados e uma estética premium que valoriza a brasilidade.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="eyebrow">Elite Sports Wear</p>
+        <p>Moda esportiva brasileira com acabamento sofisticado.</p>
+      </div>
+      <small>© 2026 Elite Sports Wear. Todos os direitos reservados.</small>
+    </footer>
+  </div>
+
+  <div class="modal-overlay hidden" id="product-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="product-modal-close" type="button">×</button>
+      <img id="product-modal-image" class="modal-image" src="" alt="Imagem do produto">
+      <div class="modal-body">
+        <p class="product-label" id="product-modal-label"></p>
+        <h3 id="product-modal-title"></h3>
+        <p id="product-modal-description"></p>
+        <div class="modal-details">
+          <span class="product-price" id="product-modal-price"></span>
+        </div>
+        <label class="modal-quantity-label">
+          Quantidade
+          <input id="product-modal-quantity" type="number" min="1" value="1">
+        </label>
+        <button class="form-submit" id="product-modal-add" type="button">Encaminhar para o carrinho</button>
+      </div>
+    </div>
+  </div>
+
+  <aside class="cart-panel hidden" id="cart-panel">
+    <div class="cart-panel-content">
+      <div class="cart-panel-header">
+        <h3>Seu carrinho</h3>
+        <button class="cart-panel-close" id="cart-panel-close" type="button">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-panel-footer">
+        <span class="cart-total" id="cart-total">Total: R$ 0,00</span>
+        <button class="form-submit" id="cart-checkout" type="button">Finalizar compra</button>
+      </div>
+    </div>
+  </aside>
+
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>
